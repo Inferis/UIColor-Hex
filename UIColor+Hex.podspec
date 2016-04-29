@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIColor' do |ios|
     ios.source_files  = ['UIColor/*.{h,m}']
-    ios.platform  = :ios, 7.0
+    ios.platforms  = { :ios => "7.0", :watchos => "2.0" }
   end
 
   s.subspec 'NSColor' do |osx|
