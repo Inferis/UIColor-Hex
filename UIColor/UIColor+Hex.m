@@ -49,21 +49,21 @@
 	three:
 		a = @"FF";
 		r = [css substringWithRange:NSMakeRange(0, 1)];
-		r = [r stringByAppendingString:a];
+		r = [r stringByAppendingString:r];
 		g = [css substringWithRange:NSMakeRange(1, 1)];
-		g = [g stringByAppendingString:a];
+		g = [g stringByAppendingString:g];
 		b = [css substringWithRange:NSMakeRange(2, 1)];
-		b = [b stringByAppendingString:a];
+		b = [b stringByAppendingString:b];
 	}
 	else if (len == 4) {
 		a = [css substringWithRange:NSMakeRange(0, 1)];
 		a = [a stringByAppendingString:a];
 		r = [css substringWithRange:NSMakeRange(1, 1)];
-		r = [r stringByAppendingString:a];
+		r = [r stringByAppendingString:r];
 		g = [css substringWithRange:NSMakeRange(2, 1)];
-		g = [g stringByAppendingString:a];
+		g = [g stringByAppendingString:g];
 		b = [css substringWithRange:NSMakeRange(3, 1)];
-		b = [b stringByAppendingString:a];
+		b = [b stringByAppendingString:b];
 	}
 	else if (len == 5 || len == 7) {
 		css = [@"0" stringByAppendingString:css];
